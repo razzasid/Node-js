@@ -1,0 +1,13 @@
+9:25:16 PM
+ENOENT: no such file or directory, open 'nodejss.png'
+Error: ENOENT: no such file or directory, open 'nodejss.png'
+    at async open (node:internal/fs/promises:638:25)
+    at async readFile (node:internal/fs/promises:1242:14)
+    at async file:///home/raza/Web%20Dev/Backend/nodeJs_Course/fs%20Module/file-1.js:12:25
+
+9:25:29 PM
+ENOENT: no such file or directory, open 'nodejss.png'
+Error: ENOENT: no such file or directory, open 'nodejss.png'
+    at async open (node:internal/fs/promises:638:25)
+    at async readFile (node:internal/fs/promises:1242:14)
+    at async file:///home/raza/Web%20Dev/Backend/nodeJs_Course/fs%20Module/file-1.js:12:25

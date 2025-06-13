@@ -1,0 +1,7 @@
+This process is almost exactly like the way that you would use addEventListener in front-end JavaScript to wait for a user action such as a mouse-click or keyboard press. The main difference is that the events are going to be things such as network requests and database queries. This functionality is facilitated through the use of callbacks. Callbacks are incredibly important to Node, so take a minute to read through this article about understanding callbacks to make sure you’re up to speed.
+
+Let’s look at a quick real-world example:
+
+This snippet is from the very first lesson in a tutorial that you’ll be following very soon. Basically this code is creating a server and saying, “any time we get a network request, run this callback function”. This function happens to respond with the text ‘Hello World!’. So if you go to a browser and navigate to the correct address and port, you would see that text on your screen.
+
+The following questions are an opportunity to reflect on key topics in this lesson. If you can’t answer a question, click on it to review the material, but keep in mind you are not expected to memorize or master this knowledge.
