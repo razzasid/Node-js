@@ -1,0 +1,16 @@
+{
+  "name": "organizex",
+  "version": "1.0.4",
+  "description": "A simple Node.js file organizer CLI tool",
+  "main": "organize.js",
+  "bin": {
+    "organizex": "./organize.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}
