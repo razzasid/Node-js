@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Hello Express</h1>
-</body>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full min-h-screen bg-zinc-900">
+      <div class="form p-10 text-white">
+        <form method="post" action="/create">
+          <input
+            type="text"
+            placeholder="title goes min-h-screen..."
+            class="block w-full rounded-md outline-none px-5 py-2 bg-zinc-800"
+            name="title"
+          />
+          <textarea
+            placeholder="write your task detail..."
+            class="block w-full mt-2 outline-none rounded-md resize-none px-5 py-2 bg-zinc-800"
+            name="details"
+          ></textarea>
+          <input
+            class="mt-2 bg-blue-600 px-5 py-2 rounded-md"
+            type="submit"
+            value="create task"
+          />
+        </form>
+      </div>
+
+      <div class="task flex gap-3 flex-wrap p-10">
+        <% if (files.length > 0) { files.forEach((file)=>{%>
+        <div class="task min-w-72 px-3 py-4 bg-zinc-800 rounded-md">
+          <h1 class="text-white text-3xl tracking-tighter"><%=file%></h1>
+          <a class="text-blue-500 inline-block mt-3" href="/file/<%= file %>">Read More</a>
+        </div>
+        <%}) } else { %>
+        <h3 class="text-zinc-600">No tasks yet.</h3>
+        <%}%>
+      </div>
+    </div>
+  </body>
 </html>
