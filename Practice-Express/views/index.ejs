@@ -22,7 +22,7 @@
             name="details"
           ></textarea>
           <input
-            class="mt-2 bg-blue-600 px-5 py-2 rounded-md"
+            class="mt-2 cursor-pointer bg-blue-600 px-5 py-2 rounded-md"
             type="submit"
             value="create task"
           />
@@ -33,7 +33,12 @@
         <% if (files.length > 0) { files.forEach((file)=>{%>
         <div class="task min-w-72 px-3 py-4 bg-zinc-800 rounded-md">
           <h1 class="text-white text-3xl tracking-tighter"><%=file%></h1>
-          <a class="text-blue-500 inline-block mt-3" href="/file/<%= file %>">Read More</a>
+          <div class="flex w-full justify-between mt-3 item-center">
+            <a class="text-blue-500 inline-block" href="/file/<%= file %>"
+              >Read More</a
+            >
+            <a class="text-blue-600" href="/edit/<%=file%>">edit filename</a>
+          </div>
         </div>
         <%}) } else { %>
         <h3 class="text-zinc-600">No tasks yet.</h3>
