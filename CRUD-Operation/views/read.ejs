@@ -29,7 +29,9 @@
           <h5 class="text-zinc-400 text-sm"><%= user.email %></h5>
 
           <div class="flex gap-4 mt-6">
-            <a href="#" class="text-blue-400 hover:underline">Edit user</a>
+            <a href="/edit/<%=user._id%>" class="text-blue-400 hover:underline"
+              >Edit user</a
+            >
             <a
               href="/delete/<%= user._id %>"
               class="text-red-500 hover:underline"
